@@ -184,8 +184,10 @@ public class GlideImageLoader extends ImageLoader {
 
 - 注意！start()方法必须放到最后执行，点击事件请放到start()前，每次都提交问题问为什么点击没有反应？需要轮播一圈才能点击？点击第一个怎么返回1？麻烦仔细阅读文档。
 
-```java
 --------------------------简单使用-------------------------------
+
+```java
+
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -198,7 +200,13 @@ protected void onCreate(Bundle savedInstanceState) {
     //banner设置方法全部调用完毕时最后调用
     banner.start();
 }
+
+```
+
+
 --------------------------详细使用-------------------------------
+
+```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -223,7 +231,10 @@ protected void onCreate(Bundle savedInstanceState) {
     //banner设置方法全部调用完毕时最后调用
     banner.start();
 }
+```
+
 -----------------当然如果你想偷下懒也可以这么用--------------------
+```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
