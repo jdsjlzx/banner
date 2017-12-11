@@ -19,10 +19,9 @@
 |指示器加标题模式<br>垂直显示|![效果示例](http://oceh51kku.bkt.clouddn.com/banner_example4.png)|
 |指示器加标题模式<br>水平显示|![效果示例](http://oceh51kku.bkt.clouddn.com/banner_example5.png)|
 
-### 联系方式  <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KBkYGhAfGhEYEB5oWVkGS0dF" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_11.png"/></a>
- ![效果示例](http://oceh51kku.bkt.clouddn.com/Android%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
-* 如果有问题可以加群大家一起交流
-* 我的个人微博：https://weibo.com/u/3013494003 有兴趣的也可以关注，大家一起交流
+### 联系方式
+* 如果有问题可以加群大家一起交流，QQ群号:250468947
+
 
 ## 常量
 |常量名称|描述|所属方法
@@ -114,15 +113,22 @@
 ## 使用步骤
 
 #### Step 1.依赖banner
-Gradle 
+Gradle
+
+* 在你的根build.gradle文件中增加JitPack仓库依赖:
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+* 在你的model的build.gradle文件中增加banner依赖
 ```groovy
 dependencies{
-    compile 'com.stay4it.banner:banner:1.4.10'  //最新版本
+    compile 'com.github.jdsjlzx:banner:1.0.0'  //最新版本
 }
-```
-或者引用本地lib
-```groovy
-compile project(':banner')
 ```
 
 
