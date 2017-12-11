@@ -42,6 +42,10 @@
 |BannerConfig.CENTER| 指示器居中|setIndicatorGravity
 |BannerConfig.RIGHT| 指示器居右|setIndicatorGravity
 
+* 注意：
+BannerConfig.ONLY_TITLE是新增样式。
+
+
 ## 动画常量类（setBannerAnimation方法调用）
 [ViewPagerTransforms](https://github.com/ToxicBakery/ViewPagerTransforms) `动画时集成的第三方库，可能有兼容问题导致position位置不准确，你可以选择参考动画然后自定义动画`
 
