@@ -9,6 +9,11 @@
 所以要实现循环还得需要自己去动手，我就把项目中的控件剔了出来，希望大家觉得有用。目前框架可以进行不同样式、不同动画设置，
 以及完善的api方法能满足大部分的需求了。
 
+## 说明
+本库只是工作需要进行了修改，发布到github上方便自己用。
+
+原版参见：https://github.com/youth5201314/banner
+
 ## 效果图
 
 |模式|图片
@@ -26,12 +31,13 @@
 ## 常量
 |常量名称|描述|所属方法
 |---|---|---|
-|BannerConfig.NOT_INDICATOR| 不显示指示器和标题|setBannerStyle
+|BannerConfig.NO_INDICATOR| 不显示指示器和标题|setBannerStyle
 |BannerConfig.CIRCLE_INDICATOR| 显示圆形指示器|setBannerStyle
 |BannerConfig.NUM_INDICATOR| 显示数字指示器|setBannerStyle
 |BannerConfig.NUM_INDICATOR_TITLE| 显示数字指示器和标题|setBannerStyle
 |BannerConfig.CIRCLE_INDICATOR_TITLE| 显示圆形指示器和标题（垂直显示）|setBannerStyle
 |BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE| 显示圆形指示器和标题（水平显示）|setBannerStyle
+|BannerConfig.ONLY_TITLE| 只显示标题（不显示任何指示器）|setBannerStyle
 |BannerConfig.LEFT| 指示器居左|setIndicatorGravity
 |BannerConfig.CENTER| 指示器居中|setIndicatorGravity
 |BannerConfig.RIGHT| 指示器居右|setIndicatorGravity
@@ -326,10 +332,6 @@ protected void onStop() {
 * 问：为什么banner的点击事件没有反应，需要下一次轮播才行？点击第一个图片怎么返回1？
 
      * 答：请将点击事件放在start方法之前执行，start必须放到最后执行，详情可以看demo。
-
-## Thanks
-
-- [ViewPagerTransforms](https://github.com/ToxicBakery/ViewPagerTransforms)
 
 
  
